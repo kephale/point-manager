@@ -6,3 +6,8 @@ The goal is to provide read/write access to collections of RealPoints through mu
 - SciJava tables
 - SciView
 - BigDataViewer
+
+**Related projects**
+
+- https://github.com/tischi/table-utils
+- https://github.com/juglab/LabelEditor

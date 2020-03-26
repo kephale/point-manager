@@ -72,11 +72,13 @@ public class Main implements Callable<Void> {
 	}
 
 	public static final void main(String... args) {
-		args = new String[]{
-				"--input", "/home/kharrington/git/point-manager/src/test/resources/test.csv",
-				"--showTable",
-				"--showSciview"
-		};
+		if( args.length == 0 ) {
+			args = new String[]{
+					"--input", "/home/kharrington/git/point-manager/src/test/resources/test.csv",
+					"--showTable",
+					"--showSciview"
+			};
+		}
 
 		CommandLine.call(new Main(), args);
 	}
